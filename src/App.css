@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.main-container {
+  display: grid;
+  place-items: center;
+  height: 75vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.instagram-heading {
+  font-size: 30px;
+  font-weight: bold; /* Make the text bold */
+  background: linear-gradient(
+    45deg,
+    #1a0dac,
+    #1042c3,
+    #0f23d4,
+    #b12e17,
+    #cc2366,
+    #bc1888
+  ); /* Instagram color gradient */
+  -webkit-background-clip: text; /* Ensures the gradient is clipped to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  background-clip: text; /* Standard background-clip property */
+  text-fill-color: transparent; /* Standard text-fill-color property */
+  margin: 0; /* Optional: remove default margin */
+  text-align: center; /* Optional: center the text */
+}
+.logo {
+  font-weight: bold; /* Make the text bold */
+  background: linear-gradient(
+    45deg,
+    #b83b5e,
+    /* Darker rose pink */ #c94c6f,
+    /* Deep raspberry */ #9b2d45,
+    /* Dark red */ #bb3987,
+    /* Deep plum */ #b83bba,
+    /* Dark violet */ #d06370 /* Very dark maroon */
+  );
+
+  -webkit-background-clip: text; /* Ensures the gradient is clipped to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  background-clip: text; /* Standard background-clip property */
+  text-fill-color: transparent; /* Standard text-fill-color property */
+  margin: 0; /* Optional: remove default margin */
+  text-align: center; /* Optional: center the text */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-bg {
+  background: linear-gradient(
+    45deg,
+    #b83b5e,
+    /* Darker rose pink */ #c94c6f,
+    /* Deep raspberry */ #9b2d45,
+    /* Dark red */ #bb3987,
+    /* Deep plum */ #b83bba,
+    /* Dark violet */ #d06370 /* Very dark maroon */
+  );
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.img-style {
+  border-radius: 25px/40px;
+  width: 100%; /* Makes the image take the full width of its parent */
+  height: 200px; /* Sets a fixed height for the image */
+  object-fit: cover;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-item img {
+  width: 100%; /* Makes the image take the full width of its parent */
+  height: 50vh; /* Sets a fixed height for the image */
+  object-fit: cover;
 }
