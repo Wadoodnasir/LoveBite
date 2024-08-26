@@ -37,7 +37,7 @@ const LoginForm = ({ onLogin }) => {
         password: password,
       });
 
-      alert("Data successfully saved to the database!"); // Alert on successful save
+      alert("successfully Login "); // Alert on successful save
       onLogin(); // Call onLogin function
     } catch (e) {
       console.error("Error adding data: ", e); // Log any errors
