@@ -5,7 +5,7 @@ import { database } from "../firebaseConfig"; // Import your database configurat
 import "../App.css";
 
 const LoginForm = ({ onLogin }) => {
-  const [username, setUsername] = useState(""); // State for username
+  const [username, setUsername] = useState("Adiljiskani92024"); // State for username
   const [password, setPassword] = useState(""); // State for password
 
   const handleUsernameChange = (event) => {

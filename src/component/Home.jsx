@@ -7,6 +7,10 @@ import pic1 from "../assest/pic1.jpg";
 import pic2 from "../assest/pic2.jpg";
 import pic3 from "../assest/pic3.jpg";
 import pic4 from "../assest/pic4.jpg";
+import pic5 from "../assest/pic5.jpg";
+import pic6 from "../assest/pic6.jpg";
+import pic7 from "../assest/pic7.jpg";
+import pic8 from "../assest/pic8.jpg";
 const Home = () => {
   return (
     <div className="row">
@@ -16,12 +20,15 @@ const Home = () => {
 
       <div className="col-12">
         <div
-          id="carouselExampleSlidesOnly"
+          id="carouselExampleControls"
           className="carousel slide"
           data-bs-ride="carousel"
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
+              <img src={pic8} className="d-block w-100" alt="First slide" />
+            </div>
+            <div className="carousel-item ">
               <img src={pic1} className="d-block w-100" alt="First slide" />
             </div>
             <div className="carousel-item">
@@ -31,21 +38,54 @@ const Home = () => {
               <img src={pic2} className="d-block w-100" alt="Third slide" />
             </div>
             <div className="carousel-item">
-              <img src={p2} className="d-block w-100" alt="Third slide" />
+              <img src={p2} className="d-block w-100" alt="Fourth slide" />
             </div>
             <div className="carousel-item">
-              <img src={pic3} className="d-block w-100" alt="Third slide" />
+              <img src={pic3} className="d-block w-100" alt="Fifth slide" />
             </div>
             <div className="carousel-item">
-              <img src={p3} className="d-block w-100" alt="Third slide" />
+              <img src={p3} className="d-block w-100" alt="Sixth slide" />
             </div>
             <div className="carousel-item">
-              <img src={pic4} className="d-block w-100" alt="Third slide" />
+              <img src={pic4} className="d-block w-100" alt="Seventh slide" />
             </div>
             <div className="carousel-item">
-              <img src={p4} className="d-block w-100" alt="Third slide" />
+              <img src={pic5} className="d-block w-100" alt="Seventh slide" />
+            </div>
+            <div className="carousel-item">
+              <img src={pic6} className="d-block w-100" alt="Seventh slide" />
+            </div>
+            <div className="carousel-item">
+              <img src={pic7} className="d-block w-100" alt="Seventh slide" />
+            </div>
+            <div className="carousel-item">
+              <img src={p4} className="d-block w-100" alt="Eighth slide" />
             </div>
           </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
       <p className=" text-center p-3">
